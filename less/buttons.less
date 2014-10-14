@@ -1,0 +1,25 @@
+.button, .button:link, .button:visited, button, input[type="submit"], input[type="button"] {
+	background: @accent-color;
+	border: 0;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: @font-color;
+	display: inline-block;
+	font-family: @font-sans-serif;
+	font-size: @font-size - 4;
+	font-weight: 600;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s;
+	vertical-align: middle;
+	white-space: nowrap;
+
+	&:active, &:focus, &:hover {
+		background: lighten(@accent-color, 20%);
+		color: @font-color;
+	}
+}

@@ -1,0 +1,48 @@
+/* Structure
+-------------------------------------------------------------- */
+body {
+	background: #f7f4df;
+	color: @font-color;
+	padding-bottom: 80px;
+}
+
+#banner {
+	display: block;
+	height: auto;
+	margin-left: 0;
+	width: 100%;
+}
+
+article {
+	margin: 0 auto;
+	padding: 0 30px;
+	position: relative;
+	max-width: 800px;
+	z-index: 2;
+}
+
+h1 {
+	border-top: 2px solid mix(#f7f4df, @font-color, 80%);
+	margin-top: 60px;
+	padding-top: 60px;
+	
+	&:first-child {
+		margin-top: -20px;
+	}
+}
+
+.button {
+	float: right;
+	margin-left: 10px;
+}
+
+.addthisevent-drop {
+	&:active, &:focus, &:hover {
+		border: 0 !important;
+		color: @font-color !important;
+		font-size: (@font-size - 4) !important;
+		height: 40px !important;
+		line-height: 40px !important;
+		padding: 0 20px !important;
+	}
+}
